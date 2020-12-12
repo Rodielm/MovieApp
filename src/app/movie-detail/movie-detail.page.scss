@@ -1,0 +1,18 @@
+ .cover-movie{
+    height: 300px;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden; 
+    white-space: nowrap;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scroll {
+      overflow: auto;
+    }
+    
+  }

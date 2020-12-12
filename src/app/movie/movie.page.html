@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Search Movie</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <!-- <ion-searchbar (ionInput)="getMovieByName($event)"></ion-searchbar> -->
+    <ion-searchbar (keyup.enter)="getMovieByName($event)">
+      
+    </ion-searchbar>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let movie of moviesData.results" size="auto">
+        <ion-card class="fixline">
+          <ion-card-header>
+            <ion-card-title>{{movie.original_title}}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            {{movie.overview}}
+            <ion-button routerLink='/movie-detail/{{movie.id}}'>Ver mas</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

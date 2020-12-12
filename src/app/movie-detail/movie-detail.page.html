@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Movie Detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-grid>
+    <ion-row>
+      <img class="cover-movie" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/{{data.poster_path}}" />
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>{{data.original_title}} - ({{data.release_date}})</div>
+      </ion-col>
+      <ion-col>
+        <div>{{data.vote_average}}</div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div class="container">
+          <div class="scroll" scrollX="true">
+            <span *ngFor="let item of data.genres">
+              <ion-chip>{{item.name}}</ion-chip>
+            </span>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+    <div>{{data.overview}}</div>
+    <ion-row>
+      <ion-col>
+        <div class="container">
+          <div class="scroll" scrollX="true">
+            <span *ngFor="let item of data.production_companies">
+              <ion-chip>{{item.name}}</ion-chip>
+            </span>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+
+
+  </ion-grid>
+
+
+
+
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-button (click)="goBack()">Go Back</ion-button>
+  </ion-toolbar>
+</ion-footer>
