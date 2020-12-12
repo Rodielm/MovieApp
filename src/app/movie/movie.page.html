@@ -5,10 +5,9 @@
   <ion-toolbar>
     <!-- <ion-searchbar (ionInput)="getMovieByName($event)"></ion-searchbar> -->
     <ion-searchbar (keyup.enter)="getMovieByName($event)">
-      
+
     </ion-searchbar>
   </ion-toolbar>
-
 </ion-header>
 
 <ion-content fullscreen>
@@ -16,6 +15,8 @@
     <ion-row>
       <ion-col *ngFor="let movie of moviesData.results" size="auto">
         <ion-card class="fixline">
+          <ion-img class="cover-movie"  src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/{{movie.poster_path}}">
+          </ion-img>
           <ion-card-header>
             <ion-card-title>{{movie.original_title}}</ion-card-title>
           </ion-card-header>
