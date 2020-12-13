@@ -5,6 +5,7 @@
 
 
 .container {
+  padding-bottom: 5px;
   width: 100%;
   overflow: hidden; 
   white-space: nowrap;
@@ -21,8 +22,8 @@
 
 .poster {
   position: absolute;
-  left: 10px;
-  top: 25px;
-  width: 100px;
+  left: 2%;
+  top: 3%;
+  width: 20%;
   z-index: 1;
 }
