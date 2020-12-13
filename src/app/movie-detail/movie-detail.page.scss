@@ -1,18 +1,28 @@
  .cover-movie{
-    height: 300px;
+   width: 100%;
+    height: 6%;
 }
 
+
 .container {
-    width: 100%;
-    overflow: hidden; 
-    white-space: nowrap;
+  width: 100%;
+  overflow: hidden; 
+  white-space: nowrap;
 
-    ::-webkit-scrollbar {
-      display: none;
-    }
-
-    .scroll {
-      overflow: auto;
-    }
-    
+  ::-webkit-scrollbar {
+    display: none;
   }
+
+  .scroll {
+    overflow: auto;
+  }
+  
+}
+
+.poster {
+  position: absolute;
+  left: 10px;
+  top: 25px;
+  width: 100px;
+  z-index: 1;
+}
