@@ -3,7 +3,7 @@
 A basic app to search for movie
 
 ### **PD: You must do this to play with app**
-You need to register or sign in (https://www.themoviedb.org/settings/api) and add the token in this file: https://github.com/Rodielm/MovieApp/blob/main/src/environments/environment.ts#L7
+You need to register or sign in (https://www.themoviedb.org/documentation/api) and add the token in this file: https://github.com/Rodielm/MovieApp/blob/main/src/environments/environment.ts#L7
 
 
 ## Features
