@@ -11,21 +11,6 @@
 </ion-header>
 
 <ion-content fullscreen>
-  <!--
-  <ion-grid>
-    <ion-row>
-      <ion-col *ngFor="let movie of moviesData.results" size="auto">
-        <ion-card class="fixline" routerLink='/movie-detail/{{movie.id}}'>
-          <ion-img class="cover-movie"  src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/{{movie.poster_path}}">
-          </ion-img>
-          <ion-card-header>
-            <ion-card-title>{{movie.original_title}}</ion-card-title>
-          </ion-card-header>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-  </ion-grid> -->
-
   <ion-grid>
     <ion-row>
       <ion-col *ngFor="let movie of moviesData.results" size-xs="6" size-sm="4" size-md="3" size-lg="2" size-xl="1" >

@@ -11,6 +11,8 @@ export class MovieDetailPage implements OnInit {
 
   movieId: number;
   data: any;
+  showProductionCompanies: boolean = false;
+  showProductionCountries: boolean = false;
 
   constructor(
     private router: Router,
@@ -30,6 +32,9 @@ export class MovieDetailPage implements OnInit {
     this.movieService.getMovieDetailById(this.movieId).subscribe(resp => {
       console.log(resp);
       this.data = resp
+      
+      this.showProductionCompanies = resp.production_companies.length > 0;
+      this.showProductionCountries = resp.production_countries.length > 0;
     })
   }
 
